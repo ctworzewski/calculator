@@ -1,17 +1,37 @@
-body {
-  background-color: red;
+.app {
+  background-color: rgb(139, 75, 75);
+  width: 300px;
+  /* height: 400px; */
+  padding-bottom: 30px;
 }
 
-#app {
-  background-color: lightblue;
-  width: 400px;
-  height: 100vh;
-  margin: 25vh auto;
-}
-
-.display {
-  background-color: white;
-  width: 200px;
-  height: 90px;
+.screen {
+  height: 60px;
+  width: 80%;
+  background: #fff;
   margin: 0 auto;
+}
+
+.section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.operator,
+.number {
+  font-size: 30px;
+}
+
+button {
+  width: 40px;
+}
+
+.clear {
+  width: 170px;
+  height: 60px;
+}
+
+.number:hover,
+.operator:hover {
+  background-color: lightblue;
 }

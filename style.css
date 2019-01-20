@@ -1,0 +1,17 @@
+body {
+  background-color: red;
+}
+
+#app {
+  background-color: lightblue;
+  width: 400px;
+  height: 100vh;
+  margin: 25vh auto;
+}
+
+.display {
+  background-color: white;
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
+}

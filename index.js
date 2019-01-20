@@ -1,41 +1,10 @@
-/* const display = document.querySelector(".display");
-const btn1 = document.querySelector(".btn1");
-const btn2 = document.querySelector(".btn2");
-const plus = document.querySelector(".plus");
-const equal = document.querySelector(".equal");
+const screenRef = document.querySelector(".screen");
+const numberRef = document.querySelectorAll(".number");
 
-function jeden() {
-  display.textContent = btn1.value;
-}
+// screenRef.textContent = "dd";
 
-function dwa() {
-  display.textContent = btn2.value;
-}
-
-function add() {
-  display.textContent = plus.value;
-}
-function result() {
-  return btn1.value + btn2.value;
-}
-
-btn1.addEventListener("click", jeden);
-btn2.addEventListener("click", dwa);
-plus.addEventListener("click", add);
-equal.addEventListener("click", result);
-
-// console.log(button);
-/* 
-for (let i = 0; i < button.length; i++) {
-  console.log(button[i]);
-} */
-
-/* input.forEach(function(btn) {
-  console.log(btn);
+const num = numberRef.forEach(function(number) {
+  number.addEventListener("click", function() {
+    screenRef.textContent = number.value;
+  });
 });
-
-function test() {
-  console.log("działa");
-} */
-
-// input.addEventListener("click", test);

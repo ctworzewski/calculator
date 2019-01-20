@@ -1,12 +1,13 @@
 const screenRef = document.querySelector(".screen");
 const numberRef = document.querySelectorAll(".number");
 const operatorRef = document.querySelectorAll(".operator");
-const clearRef = document.querySelectorAll(".clear");
+const clearRef = document.querySelector(".clear");
 
 // screenRef.textContent = "dd";
 
 const num = numberRef.forEach(function(number) {
   number.addEventListener("click", function() {
+    parseInt(number.value);
     // parseInt((screenRef.textContent = number.value));
     screenRef.textContent = number.value;
     console.log(typeof num);
@@ -26,6 +27,6 @@ function sub() {}
 function multi() {}
 function div() {}
 
-clearRef.addEventListener("click", function() {
+const clear = clearRef.addEventListener("click", function() {
   screenRef.value = "";
 });

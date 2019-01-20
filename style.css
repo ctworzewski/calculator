@@ -1,16 +1,23 @@
 .app {
-  background-color: rgb(139, 75, 75);
-  width: 300px;
+  background-color: rgb(29, 29, 29);
+  width: 800px;
   /* height: 400px; */
-  padding-bottom: 30px;
-  margin-top: 30px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  transform: translate(0, 25%);
 }
 
 .screen {
-  height: 60px;
-  width: 80%;
-  background: #fff;
+  height: 90px;
+  line-height: 90px;
+  width: 72%;
+  background: rgb(46, 46, 46);
   margin: 0 auto;
+  font-size: 50px;
+  text-align: right;
+  color: white;
+  border-top: 3px solid rgb(0, 138, 0);
 }
 
 .section {
@@ -24,7 +31,11 @@
 }
 
 button {
-  width: 40px;
+  width: 140px;
+  height: 70px;
+  background-color: rgb(65, 62, 62);
+  color: white;
+  border: none;
 }
 
 .clear {
@@ -34,5 +45,9 @@ button {
 
 .number:hover,
 .operator:hover {
-  background-color: lightblue;
+  background-color: rgb(88, 88, 88);
+}
+
+.equal-color {
+  background-color: rgb(93, 149, 33);
 }

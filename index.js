@@ -39,11 +39,12 @@ const oper = operatorRef.forEach(function(operator) {
 });
 console.log(oper);
 
-function add() {}
+/* function add() {}
 function sub() {}
 function multi() {}
-function div() {}
+function div() {} */
 
 const clear = clearRef.addEventListener("click", function() {
-  screenRef.value = "";
+  // console.log("czyść");
+  screenRef.innerHTML = "";
 });

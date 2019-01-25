@@ -18,7 +18,11 @@ const num = numberRef.forEach(function(number) {
     temp = screenRef.textContent + number.value;
     // screenRef.textContent = temp + number.value;
     screenRef.textContent = temp;
+    parseInt(temp, 10);
     // console.log(temp);
+    console.log(typeof screenRef.value);
+    console.log(typeof number.value);
+    console.log(typeof temp);
     // temp.textContent += number.value;
     // console.log('to: ', temp.textContent += number)
   });
@@ -26,7 +30,10 @@ const num = numberRef.forEach(function(number) {
 
 const oper = operatorRef.forEach(function(operator) {
   operator.addEventListener("click", function() {
-    screenRef.textContent = operator.value;
+    let temp = operator.value;
+    temp = screenRef.textContent + operator.value;
+    // screenRef.textContent = operator.value;
+    screenRef.textContent = temp;
     // console.log(typeof operator);
   });
 });
